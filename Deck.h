@@ -1,3 +1,6 @@
+#ifndef DECK_H
+#define DECK_H
+
 #include "Card.h"
 #include <vector>
 #include <algorithm> // for shuffle
@@ -19,4 +22,4 @@ public:
     void clearDeck(int numberOfDecks);
 
 };
-
+#endif // DECK_H

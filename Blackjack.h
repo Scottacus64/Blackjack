@@ -1,3 +1,6 @@
+#ifndef BLACKJACK_H
+#define BLACKJACK_H
+
 #include "Hand.h"
 
 class Blackjack
@@ -9,6 +12,10 @@ public:
     int addUpHand(Hand hand);
     bool bust = false;
     bool hit = true;
+    string gameOutcome();
+    void playerTurn();
+    void dealerTurn();
+    void newGame();
 
 private:
     int dealerScore;
@@ -18,3 +25,4 @@ private:
     Hand dealerHand;
     Deck blackjackDeck;
 };
+#endif BLACKJACK_H

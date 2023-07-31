@@ -23,67 +23,19 @@ Blackjack::~Blackjack()
 void Blackjack::playGame()
 {
     string again = "";
-    string hitAgain = "";
+   
     while (playAgain == true)
     {
-        int dealerTotal = 0;
-        int playerTotal = 0;
-        for (int i=0; i<2; i++)
-        {
-            playerHand.addCard(blackjackDeck.deal());
-            dealerHand.addCard(blackjackDeck.deal());
-        }
-        cout << "\nPlayer hand: ";
-        playerHand.printHand();
-        cout << "\nDealer hand: ";
-        Card* c = dealerHand.getCard(1);
-        c->flipCard();
-        dealerHand.printHand();
-        c->flipCard();
+        newGame();
+        playerTurn();
+        dealerTurn();
 
-        while (bust == false && hit == true)
-        {
-            cout <<"\nDo you want another card (y/n)?";
-            cin >> hitAgain;
-            if (hitAgain == "n" || hitAgain == "N")
-            {
-                hit = false;
-            }
-            else
-            {
-                playerHand.addCard(blackjackDeck.deal());
-            }
-            cout << "\nPlayer: ";
-            playerTotal = addUpHand(playerHand);
-            playerHand.printHand();
-            cout << " Totsl = " << playerTotal;
-            if (playerTotal > 21) {bust = true;}
-        }
-
-        dealerTotal = addUpHand(dealerHand);
-        while (dealerTotal <17 && bust == false)
-        {
-            dealerHand.addCard(blackjackDeck.deal());
-            dealerTotal = addUpHand(dealerHand);
-        }
-
-        
         cout << "\nDealer: ";
         dealerHand.printHand();
-        cout << "total = " << dealerTotal;
+        cout << "total = " << dealerScore;
 
-        if (bust == true || dealerTotal < 22 && dealerTotal > playerTotal)
-        {
-            cout << "\nDealer wins\n";
-        }
-        if (bust == false && playerTotal > dealerTotal || dealerTotal > 21)
-        {
-            cout << "\nPlayer wins!\n";
-        }
-        if (bust == false && playerTotal == dealerTotal)
-        {
-            cout << "\nPush!\n";
-        }
+        string result = gameOutcome();
+        cout << result;
 
         cout << "\nPlay again (Y/N)?\n";
         cin >> again;
@@ -91,16 +43,36 @@ void Blackjack::playGame()
         {
             playAgain = false;
         }
-        bust = false;
-        hit = true;
-        dealerHand.clearHand();
-        playerHand.clearHand();
-        int cards = blackjackDeck.cardsLeft();
-        if (cards < 25)
-        {
-            blackjackDeck.clearDeck(2);
-        }
     }
+}
+
+void Blackjack::newGame()
+{
+    dealerScore = 0;
+    playerScore = 0;
+    bust = false;
+    hit = true;
+    dealerHand.clearHand();
+    playerHand.clearHand();
+
+    int cards = blackjackDeck.cardsLeft();
+    if (cards < 25)
+    {
+        blackjackDeck.clearDeck(2);
+    }
+
+    for (int i=0; i<2; i++)
+    {
+        playerHand.addCard(blackjackDeck.deal());
+        dealerHand.addCard(blackjackDeck.deal());
+    }
+    cout << "\nPlayer hand: ";
+    playerHand.printHand();
+    cout << "\nDealer hand: ";
+    Card* c = dealerHand.getCard(1);
+    c->flipCard();
+    dealerHand.printHand();
+    c->flipCard();
 }
 
 
@@ -123,4 +95,51 @@ int Blackjack::addUpHand(Hand hand)
     return handTotal;
 }
 
+string Blackjack::gameOutcome()
+{
+    if (bust == true || dealerScore < 22 && dealerScore > playerScore)
+    {
+        return "\n\nDealer wins\n";
+    }
+    if (bust == false && playerScore > dealerScore || dealerScore > 21)
+    {
+        return "\n\nPlayer wins!\n";
+    }
+    if (bust == false && playerScore == dealerScore)
+    {
+        return "\n\nPush!\n";
+    }
+}
 
+void Blackjack::playerTurn()
+{
+    string hitAgain = "";
+    while (bust == false && hit == true)
+    {
+        cout <<"\nDo you want another card (y/n)?";
+        cin >> hitAgain;
+        if (hitAgain == "n" || hitAgain == "N")
+        {
+            hit = false;
+        }
+        else
+        {
+            playerHand.addCard(blackjackDeck.deal());
+        }
+        cout << "\nPlayer: ";
+        playerScore = addUpHand(playerHand);
+        playerHand.printHand();
+        cout << " Totsl = " << playerScore;
+        if (playerScore > 21) {bust = true;}
+    }
+}
+
+void Blackjack::dealerTurn()
+{
+    dealerScore = addUpHand(dealerHand);
+    while (dealerScore <17 && bust == false)
+    {
+        dealerHand.addCard(blackjackDeck.deal());
+        dealerScore= addUpHand(dealerHand);
+    }
+}

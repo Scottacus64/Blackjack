@@ -1,3 +1,6 @@
+#ifndef HAND_H
+#define HAND_H
+
 #include "Deck.h"
 
 class Hand
@@ -22,3 +25,5 @@ public:
     static bool compareBySuitAndCardValue(Card& card1, Card& card2);
     void clearHand();
 };
+
+#endif HAND_H
