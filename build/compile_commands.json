@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/CardExample.dir/main.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/main.cpp",
+  "file": "/Users/scottmiller/VSC/CPP/Blackjack/main.cpp",
+  "output": "CMakeFiles/CardExample.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/CardExample.dir/Card.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/Card.cpp",
+  "file": "/Users/scottmiller/VSC/CPP/Blackjack/Card.cpp",
+  "output": "CMakeFiles/CardExample.dir/Card.cpp.o"
+},
+{
+  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/CardExample.dir/Deck.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/Deck.cpp",
+  "file": "/Users/scottmiller/VSC/CPP/Blackjack/Deck.cpp",
+  "output": "CMakeFiles/CardExample.dir/Deck.cpp.o"
+},
+{
+  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/CardExample.dir/Hand.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/Hand.cpp",
+  "file": "/Users/scottmiller/VSC/CPP/Blackjack/Hand.cpp",
+  "output": "CMakeFiles/CardExample.dir/Hand.cpp.o"
+},
+{
+  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/CardExample.dir/BlackJack.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/BlackJack.cpp",
+  "file": "/Users/scottmiller/VSC/CPP/Blackjack/BlackJack.cpp",
+  "output": "CMakeFiles/CardExample.dir/BlackJack.cpp.o"
+}
+]
