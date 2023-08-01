@@ -744,3 +744,81 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/local/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/local/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/CMakeScratch/TryCompile-ompQY9"
+      binary: "/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/CMakeScratch/TryCompile-ompQY9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/3rdparty/kwin;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/macos"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/CMakeScratch/TryCompile-ompQY9
+        
+        Run Build Command(s):/usr/local/bin/ninja -v cmTC_f4a4e && [1/2  50% :: 0.105] /usr/bin/clang++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_f4a4e.dir/src.cxx.o -MF CMakeFiles/cmTC_f4a4e.dir/src.cxx.o.d -o CMakeFiles/cmTC_f4a4e.dir/src.cxx.o -c /Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/CMakeScratch/TryCompile-ompQY9/src.cxx
+        [2/2 100% :: 0.200] : && /usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_f4a4e.dir/src.cxx.o -o cmTC_f4a4e   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/local/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/local/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
+      - "/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/local/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:111 (find_dependency)"
+      - "/usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
+      - "/usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:40 (include)"
+      - "/usr/local/lib/cmake/Qt6/Qt6Config.cmake:157 (find_package)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/CMakeScratch/TryCompile-G6ja5t"
+      binary: "/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/CMakeScratch/TryCompile-G6ja5t"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/3rdparty/kwin;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/macos;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/3rdparty/kwin;/usr/local/Cellar/qt/6.5.1_2/lib/cmake/Qt6/macos"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: /Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/CMakeScratch/TryCompile-G6ja5t
+        
+        Run Build Command(s):/usr/local/bin/ninja -v cmTC_7c8ce && [1/2  50% :: 0.189] /usr/bin/clang++ -DHAVE_STDATOMIC  -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -MD -MT CMakeFiles/cmTC_7c8ce.dir/src.cxx.o -MF CMakeFiles/cmTC_7c8ce.dir/src.cxx.o.d -o CMakeFiles/cmTC_7c8ce.dir/src.cxx.o -c /Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/CMakeScratch/TryCompile-G6ja5t/src.cxx
+        [2/2 100% :: 0.273] : && /usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_7c8ce.dir/src.cxx.o -o cmTC_7c8ce   && :
+        
+      exitCode: 0
+...

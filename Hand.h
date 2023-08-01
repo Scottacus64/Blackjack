@@ -26,4 +26,4 @@ public:
     void clearHand();
 };
 
-#endif HAND_H
+#endif // HAND_H

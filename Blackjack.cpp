@@ -34,7 +34,7 @@ void Blackjack::playGame()
         dealerHand.printHand();
         cout << "total = " << dealerScore;
 
-        string result = gameOutcome();
+        int result = gameOutcome();
         cout << result;
 
         cout << "\nPlay again (Y/N)?\n";
@@ -72,9 +72,19 @@ void Blackjack::newGame()
     Card* c = dealerHand.getCard(1);
     c->flipCard();
     dealerHand.printHand();
-    c->flipCard();
 }
 
+Hand* Blackjack::getPlayerHand()
+{
+    Hand * pPlayerHand = &playerHand;
+    return pPlayerHand;
+}
+
+Hand* Blackjack::getDealerHand()
+{
+    Hand* pDealerHand = &dealerHand;
+    return pDealerHand;
+}
 
 int Blackjack::addUpHand(Hand hand)
 {
@@ -95,19 +105,20 @@ int Blackjack::addUpHand(Hand hand)
     return handTotal;
 }
 
-string Blackjack::gameOutcome()
+int Blackjack::gameOutcome()
 {
+    cout << "bust = " << bust << " dealer score = " << dealerScore << " player score = " << playerScore << "\n";
     if (bust == true || dealerScore < 22 && dealerScore > playerScore)
     {
-        return "\n\nDealer wins\n";
+        return 0;
     }
     if (bust == false && playerScore > dealerScore || dealerScore > 21)
     {
-        return "\n\nPlayer wins!\n";
+        return 1;
     }
     if (bust == false && playerScore == dealerScore)
     {
-        return "\n\nPush!\n";
+        return 2;
     }
 }
 
@@ -129,17 +140,31 @@ void Blackjack::playerTurn()
         cout << "\nPlayer: ";
         playerScore = addUpHand(playerHand);
         playerHand.printHand();
-        cout << " Totsl = " << playerScore;
+        cout << " Total = " << playerScore;
         if (playerScore > 21) {bust = true;}
     }
 }
 
-void Blackjack::dealerTurn()
+
+int Blackjack::playerHit()
 {
+    playerHand.addCard(blackjackDeck.deal());
+    playerScore = addUpHand(playerHand);
+    if (playerScore > 21) {bust = true;}
+    return playerScore;
+
+}
+
+int Blackjack::dealerTurn()
+{
+    playerScore = addUpHand(playerHand);
+    Card* c = dealerHand.getCard(1);
+    c->flipCard();
     dealerScore = addUpHand(dealerHand);
     while (dealerScore <17 && bust == false)
     {
         dealerHand.addCard(blackjackDeck.deal());
         dealerScore= addUpHand(dealerHand);
     }
+    return dealerScore;
 }

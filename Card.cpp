@@ -8,13 +8,14 @@ Card::Card()
 {  
 }
 
-Card::Card(int fv, int av, char s, string pv)
+Card::Card(int fv, int av, int idn, char s, string pv)
 {
     faceValue = fv;
     actualValue = av;
     suit = s;
     printValue = pv;
     faceUp = true;
+    id = idn;
 }
 
 Card::~Card()
@@ -41,6 +42,16 @@ string Card::getPrintValue()
     return printValue;
 }
 
+bool Card::getFaceUp()
+{
+    return faceUp;
+}
+
+int Card::getID()
+{
+    return id;
+}
+
 char Card::getSuit()
 {
     return suit;
@@ -52,7 +63,8 @@ void Card::printCard()
     {
         cout << printValue << suit;
     }
-    else{
+    else
+    {
         cout << "**";
     }
 }

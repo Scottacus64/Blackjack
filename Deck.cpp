@@ -22,13 +22,15 @@ Deck::~Deck()
 
 void Deck::makeDeck()
 {
-   int av;
+    int av;
+    int id = 0;
     string pv;
     char suits[4] = {'C', 'S', 'H', 'D'};
     for (int s=0; s<4; s++)
     {
         for (int fv=1; fv<14; fv++)
         {
+            id++;
             switch (fv)
             {
             case 1:
@@ -52,7 +54,7 @@ void Deck::makeDeck()
                 pv = "K";
                 break;
             }
-            m_deck.push_back(Card(fv, av, suits[s], pv));
+            m_deck.push_back(Card(fv, av, id, suits[s], pv));
         }
     }
 }

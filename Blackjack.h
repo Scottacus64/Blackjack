@@ -12,10 +12,13 @@ public:
     int addUpHand(Hand hand);
     bool bust = false;
     bool hit = true;
-    string gameOutcome();
+    int gameOutcome();
     void playerTurn();
-    void dealerTurn();
+    int dealerTurn();
     void newGame();
+    Hand* getPlayerHand();
+    Hand* getDealerHand();
+    int playerHit();
 
 private:
     int dealerScore;
@@ -25,4 +28,4 @@ private:
     Hand dealerHand;
     Deck blackjackDeck;
 };
-#endif BLACKJACK_H
+#endif // BLACKJACK_H
