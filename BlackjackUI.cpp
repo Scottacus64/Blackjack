@@ -1,5 +1,5 @@
 #include "BlackjackUI.h"
-#include "ui_Blackjack.h"
+#include "ui_blackjack.h"
 #include <string>
 #include <iostream>
 
