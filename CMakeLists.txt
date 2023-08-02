@@ -76,3 +76,7 @@ install(TARGETS BlackjackUI
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(BlackjackUI)
 endif()
+
+add_custom_command(TARGET BlackjackUI POST_BUILD
+                   COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/Card PNGs" "$<TARGET_FILE_DIR:BlackjackUI>/pngs")
+

@@ -132,14 +132,17 @@ int Blackjack::gameOutcome()
     cout << "bust = " << bust << " dealer score = " << dealerScore << " player score = " << playerScore << "\n";
     if (bust == true || dealerScore < 22 && dealerScore > playerScore)
     {
+        loss ++;
         return 0;
     }
     if (bust == false && playerScore > dealerScore || dealerScore > 21)
     {
+        win ++;
         return 1;
     }
     if (bust == false && playerScore == dealerScore)
     {
+        push ++;
         return 2;
     }
 }
@@ -196,4 +199,19 @@ int Blackjack::dealerTurn()
         dealerScore= addUpHand(dealerHand, 0);
     }
     return dealerScore;
+}
+
+int Blackjack::getWin()
+{
+    return win;
+}
+
+int Blackjack::getLoss()
+{
+    return loss;
+}
+
+int Blackjack::getPush()
+{
+    return push;
 }

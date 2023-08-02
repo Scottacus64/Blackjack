@@ -44,6 +44,9 @@ private:
     bool dealerBust = false;
     int playerScore;
     int dealerScore;
+    int win;
+    int loss;
+    int push;
     
     Blackjack* m_pBlackjack ;
 };

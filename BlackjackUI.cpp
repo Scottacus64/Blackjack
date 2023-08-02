@@ -28,22 +28,6 @@ BlackjackUI::BlackjackUI(QWidget *parent)
                 cardImage[slot] = QPixmap(assetPath + QString::number(i) + suits[s]+ ".png");
             }
         }
-   /* ui->setupUi(this);
-
-    cardImage[0] = QPixmap ("/Users/scottmiller/VSC/cpp/Blackjack/Card PNGs/0B.png");
-
-    char suits[4] = {'C', 'S', 'H', 'D'};
-    int slot = 0;
-    for (int s=0; s<4; s++)
-    {
-        for (int i=1; i<14; i++)
-        {
-            slot++;
-            QString path = "/Users/scottmiller/VSC/cpp/Blackjack/Card PNGs/";
-            path += QString::number(i) + suits[s]+ ".png";
-            cardImage[slot] = QPixmap (path);
-        }
-    } */
 
     pc[0] = ui->pc_0;
     pc[1] = ui->pc_1;
@@ -106,7 +90,7 @@ void BlackjackUI::displayDealerHand(Hand* pDealerHand)
     {
         c = dealerHand.getCard(i);
         int id = c->getID();
-        if (c->getFaceUp() == false) {id = 0;}
+        if (c->getFaceUp() == false && playerBust == false) {id = 0;}
         dc[i]->setPixmap(cardImage[id]);
     }
 }
@@ -168,11 +152,14 @@ void BlackjackUI::on_hitButton_clicked()
         if (playerScore > 21) 
         {
             playerBust = true;
+            Hand* pDealerHand = m_pBlackjack->getDealerHand();     
+            displayDealerHand(pDealerHand);
             gameOver();
         }
         displayPlayerLabel(playerScore);
         Hand* pPlayerHand = m_pBlackjack->getPlayerHand();
         displayPlayerHand(pPlayerHand);
+
 
     }
 
@@ -181,7 +168,7 @@ void BlackjackUI::on_hitButton_clicked()
 
 void BlackjackUI::on_stayButton_clicked()
 {
-    if (playerBust == false)
+    if (playerBust == false && inGame == true)
     {
         dealerScore = m_pBlackjack->dealerTurn();
         if (dealerScore > 21) {dealerBust = true;}
@@ -208,6 +195,10 @@ void BlackjackUI::gameOver()
     {
         ui->stayButton->setText("Push!");
     }
+    win = m_pBlackjack->getWin();
+    loss = m_pBlackjack->getLoss();
+    push = m_pBlackjack->getPush();
+    ui->results->setText("Win: " + QString::number(win) + "    Loss: " + QString::number(loss) + "    Push: " + QString::number(push));
     ui->hitButton->setText("Play Again?");
 }
 

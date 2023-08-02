@@ -19,6 +19,9 @@ public:
     Hand* getPlayerHand();
     Hand* getDealerHand();
     int playerHit();
+    int getWin();
+    int getLoss();
+    int getPush();
 
 private:
     int dealerAces = 0;
@@ -29,5 +32,8 @@ private:
     Hand playerHand;
     Hand dealerHand;
     Deck blackjackDeck;
+    int win = 0;
+    int loss = 0;
+    int push = 0;
 };
 #endif // BLACKJACK_H
