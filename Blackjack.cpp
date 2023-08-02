@@ -50,6 +50,8 @@ void Blackjack::newGame()
 {
     dealerScore = 0;
     playerScore = 0;
+    dealerAces = 0;
+    playerAces = 0;
     bust = false;
     hit = true;
     dealerHand.clearHand();
@@ -59,12 +61,18 @@ void Blackjack::newGame()
     if (cards < 25)
     {
         blackjackDeck.clearDeck(2);
+        cout << "NEW DECK\n" ;
     }
+    blackjackDeck.shuffle();
 
     for (int i=0; i<2; i++)
     {
-        playerHand.addCard(blackjackDeck.deal());
-        dealerHand.addCard(blackjackDeck.deal());
+        Card c = blackjackDeck.deal();
+        playerHand.addCard(c);
+        if (c.getActualValue() == 11) {playerAces ++;} 
+        Card c1 = blackjackDeck.deal();
+        dealerHand.addCard(c1);
+         if (c1.getActualValue() == 11) {dealerAces ++;}
     }
     cout << "\nPlayer hand: ";
     playerHand.printHand();
@@ -86,7 +94,7 @@ Hand* Blackjack::getDealerHand()
     return pDealerHand;
 }
 
-int Blackjack::addUpHand(Hand hand)
+int Blackjack::addUpHand(Hand hand, int player)
 {
     int handTotal = 0;
     hand.sortActualValue();
@@ -96,10 +104,24 @@ int Blackjack::addUpHand(Hand hand)
     {
         Card* c = hand.getCard(i);
         handTotal += c->getActualValue();
-    
-        if (handTotal > 21 && c->getActualValue() == 11)
+    }
+    if (handTotal > 21) //&& c->getActualValue() == 11)
+    {
+        if (player == 1)
         {
-            handTotal -= 10;
+            cout << "PlayerAces = "  << playerAces << "\n";
+            for (int i=0; i<playerAces; i++)
+            {
+                if (handTotal >21) {handTotal -=10;}     
+            }
+        }
+        if (player == 0)
+        {
+            cout << "DealerAces = "  << dealerAces << "\n";
+            for (int i=0; i<dealerAces; i++)
+            {
+                if (handTotal > 21) {handTotal -=10;}
+            }
         }
     }
     return handTotal;
@@ -135,10 +157,13 @@ void Blackjack::playerTurn()
         }
         else
         {
-            playerHand.addCard(blackjackDeck.deal());
+            Card c = blackjackDeck.deal();
+            if (c.getActualValue() == 11) {playerAces ++;}
+            playerHand.addCard(c);
+            
         }
         cout << "\nPlayer: ";
-        playerScore = addUpHand(playerHand);
+        playerScore = addUpHand(playerHand, 1);
         playerHand.printHand();
         cout << " Total = " << playerScore;
         if (playerScore > 21) {bust = true;}
@@ -148,8 +173,10 @@ void Blackjack::playerTurn()
 
 int Blackjack::playerHit()
 {
-    playerHand.addCard(blackjackDeck.deal());
-    playerScore = addUpHand(playerHand);
+    Card c = blackjackDeck.deal();
+    if (c.getActualValue() == 11) {playerAces++;}
+    playerHand.addCard(c);
+    playerScore = addUpHand(playerHand, 1);
     if (playerScore > 21) {bust = true;}
     return playerScore;
 
@@ -157,14 +184,16 @@ int Blackjack::playerHit()
 
 int Blackjack::dealerTurn()
 {
-    playerScore = addUpHand(playerHand);
+    playerScore = addUpHand(playerHand, 1);
     Card* c = dealerHand.getCard(1);
     c->flipCard();
-    dealerScore = addUpHand(dealerHand);
+    dealerScore = addUpHand(dealerHand, 0);
     while (dealerScore <17 && bust == false)
     {
-        dealerHand.addCard(blackjackDeck.deal());
-        dealerScore= addUpHand(dealerHand);
+        Card c = blackjackDeck.deal();
+        if (c.getActualValue() == 11) {dealerAces ++;}
+        dealerHand.addCard(c);
+        dealerScore= addUpHand(dealerHand, 0);
     }
     return dealerScore;
 }

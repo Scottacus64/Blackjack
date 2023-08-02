@@ -1,16 +1,16 @@
 {
-	"BUILD_DIR" : "/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/scottmiller/VSC/CPP/Blackjack/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/scottmiller/VSC/CPP/Blackjack/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/scottmiller/VSC/CPP/Blackjack",
+	"BUILD_DIR" : "/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/scottmiller/vsc/CPP/Blackjack/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/scottmiller/vsc/CPP/Blackjack/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/scottmiller/vsc/CPP/Blackjack",
 	"CMAKE_EXECUTABLE" : "/usr/local/Cellar/cmake/3.26.4/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/scottmiller/VSC/CPP/Blackjack/CMakeLists.txt",
-		"/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/3.26.4/CMakeSystem.cmake",
+		"/Users/scottmiller/vsc/CPP/Blackjack/CMakeLists.txt",
+		"/Users/scottmiller/vsc/CPP/Blackjack/build/CMakeFiles/3.26.4/CMakeSystem.cmake",
 		"/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake",
+		"/Users/scottmiller/vsc/CPP/Blackjack/build/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake",
 		"/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeInitializeConfigs.cmake",
@@ -335,45 +335,45 @@
 		"/usr/local/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
 		"/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/Users/scottmiller/VSC/CPP/Blackjack",
-	"DEP_FILE" : "/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "/Users/scottmiller/vsc/CPP/Blackjack",
+	"DEP_FILE" : "/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "BlackjackUI_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/Users/scottmiller/VSC/CPP/Blackjack/Blackjack.h",
+			"/Users/scottmiller/vsc/CPP/Blackjack/Blackjack.h",
 			"MU",
 			"EWIEGA46WW/moc_Blackjack.cpp",
 			null
 		],
 		[
-			"/Users/scottmiller/VSC/CPP/Blackjack/BlackjackUI.h",
+			"/Users/scottmiller/vsc/CPP/Blackjack/BlackjackUI.h",
 			"MU",
 			"EWIEGA46WW/moc_BlackjackUI.cpp",
 			null
 		],
 		[
-			"/Users/scottmiller/VSC/CPP/Blackjack/Card.h",
+			"/Users/scottmiller/vsc/CPP/Blackjack/Card.h",
 			"MU",
 			"EWIEGA46WW/moc_Card.cpp",
 			null
 		],
 		[
-			"/Users/scottmiller/VSC/CPP/Blackjack/Deck.h",
+			"/Users/scottmiller/vsc/CPP/Blackjack/Deck.h",
 			"MU",
 			"EWIEGA46WW/moc_Deck.cpp",
 			null
 		],
 		[
-			"/Users/scottmiller/VSC/CPP/Blackjack/Hand.h",
+			"/Users/scottmiller/vsc/CPP/Blackjack/Hand.h",
 			"MU",
 			"EWIEGA46WW/moc_Hand.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -415,25 +415,25 @@
 		"-c",
 		"/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 10,
-	"PARSE_CACHE_FILE" : "/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/BlackjackUI_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/scottmiller/vsc/CPP/Blackjack/build/CMakeFiles/BlackjackUI_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/local/share/qt/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/local/share/qt/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 5,
-	"SETTINGS_FILE" : "/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/BlackjackUI_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/scottmiller/vsc/CPP/Blackjack/build/CMakeFiles/BlackjackUI_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/scottmiller/VSC/CPP/Blackjack/Blackjack.cpp", "MU", null ],
-		[ "/Users/scottmiller/VSC/CPP/Blackjack/BlackjackUI.cpp", "MU", null ],
-		[ "/Users/scottmiller/VSC/CPP/Blackjack/Card.cpp", "MU", null ],
-		[ "/Users/scottmiller/VSC/CPP/Blackjack/Deck.cpp", "MU", null ],
-		[ "/Users/scottmiller/VSC/CPP/Blackjack/Hand.cpp", "MU", null ],
-		[ "/Users/scottmiller/VSC/CPP/Blackjack/main.cpp", "MU", null ]
+		[ "/Users/scottmiller/vsc/CPP/Blackjack/Blackjack.cpp", "MU", null ],
+		[ "/Users/scottmiller/vsc/CPP/Blackjack/BlackjackUI.cpp", "MU", null ],
+		[ "/Users/scottmiller/vsc/CPP/Blackjack/Card.cpp", "MU", null ],
+		[ "/Users/scottmiller/vsc/CPP/Blackjack/Deck.cpp", "MU", null ],
+		[ "/Users/scottmiller/vsc/CPP/Blackjack/Hand.cpp", "MU", null ],
+		[ "/Users/scottmiller/vsc/CPP/Blackjack/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -1,44 +1,44 @@
 [
 {
-  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
-  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/BlackjackUI_autogen/mocs_compilation.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/mocs_compilation.cpp",
-  "file": "/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/mocs_compilation.cpp",
+  "directory": "/Users/scottmiller/vsc/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/BlackjackUI_autogen/mocs_compilation.cpp.o -c /Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/mocs_compilation.cpp",
+  "file": "/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/mocs_compilation.cpp",
   "output": "CMakeFiles/BlackjackUI.dir/BlackjackUI_autogen/mocs_compilation.cpp.o"
 },
 {
-  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
-  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/main.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/main.cpp",
-  "file": "/Users/scottmiller/VSC/CPP/Blackjack/main.cpp",
+  "directory": "/Users/scottmiller/vsc/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/main.cpp.o -c /Users/scottmiller/vsc/CPP/Blackjack/main.cpp",
+  "file": "/Users/scottmiller/vsc/CPP/Blackjack/main.cpp",
   "output": "CMakeFiles/BlackjackUI.dir/main.cpp.o"
 },
 {
-  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
-  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/BlackjackUI.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/BlackjackUI.cpp",
-  "file": "/Users/scottmiller/VSC/CPP/Blackjack/BlackjackUI.cpp",
+  "directory": "/Users/scottmiller/vsc/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/BlackjackUI.cpp.o -c /Users/scottmiller/vsc/CPP/Blackjack/BlackjackUI.cpp",
+  "file": "/Users/scottmiller/vsc/CPP/Blackjack/BlackjackUI.cpp",
   "output": "CMakeFiles/BlackjackUI.dir/BlackjackUI.cpp.o"
 },
 {
-  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
-  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/Blackjack.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/Blackjack.cpp",
-  "file": "/Users/scottmiller/VSC/CPP/Blackjack/Blackjack.cpp",
+  "directory": "/Users/scottmiller/vsc/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/Blackjack.cpp.o -c /Users/scottmiller/vsc/CPP/Blackjack/Blackjack.cpp",
+  "file": "/Users/scottmiller/vsc/CPP/Blackjack/Blackjack.cpp",
   "output": "CMakeFiles/BlackjackUI.dir/Blackjack.cpp.o"
 },
 {
-  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
-  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/Card.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/Card.cpp",
-  "file": "/Users/scottmiller/VSC/CPP/Blackjack/Card.cpp",
+  "directory": "/Users/scottmiller/vsc/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/Card.cpp.o -c /Users/scottmiller/vsc/CPP/Blackjack/Card.cpp",
+  "file": "/Users/scottmiller/vsc/CPP/Blackjack/Card.cpp",
   "output": "CMakeFiles/BlackjackUI.dir/Card.cpp.o"
 },
 {
-  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
-  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/Deck.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/Deck.cpp",
-  "file": "/Users/scottmiller/VSC/CPP/Blackjack/Deck.cpp",
+  "directory": "/Users/scottmiller/vsc/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/Deck.cpp.o -c /Users/scottmiller/vsc/CPP/Blackjack/Deck.cpp",
+  "file": "/Users/scottmiller/vsc/CPP/Blackjack/Deck.cpp",
   "output": "CMakeFiles/BlackjackUI.dir/Deck.cpp.o"
 },
 {
-  "directory": "/Users/scottmiller/VSC/CPP/Blackjack/build",
-  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/Hand.cpp.o -c /Users/scottmiller/VSC/CPP/Blackjack/Hand.cpp",
-  "file": "/Users/scottmiller/VSC/CPP/Blackjack/Hand.cpp",
+  "directory": "/Users/scottmiller/vsc/CPP/Blackjack/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include -isystem /usr/local/lib/QtCore.framework/Headers -iframework /usr/local/lib -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fPIC -o CMakeFiles/BlackjackUI.dir/Hand.cpp.o -c /Users/scottmiller/vsc/CPP/Blackjack/Hand.cpp",
+  "file": "/Users/scottmiller/vsc/CPP/Blackjack/Hand.cpp",
   "output": "CMakeFiles/BlackjackUI.dir/Hand.cpp.o"
 }
 ]

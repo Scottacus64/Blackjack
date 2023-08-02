@@ -115,7 +115,7 @@ void BlackjackUI::displayPlayerHand(Hand* pPlayerHand)
         int id = c->getID();
         pc[i]->setPixmap(cardImage[id]);
     }
-    int score = m_pBlackjack->addUpHand(playerHand);
+    int score = m_pBlackjack->addUpHand(playerHand, 1);
     playerScore = score;
     displayPlayerLabel(score);
 }

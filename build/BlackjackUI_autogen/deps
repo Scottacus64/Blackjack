@@ -657,21 +657,21 @@ BlackjackUI_autogen/timestamp: \
 	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
 	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h \
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include/stdarg.h \
-	/Users/scottmiller/VSC/CPP/Blackjack/Blackjack.cpp \
-	/Users/scottmiller/VSC/CPP/Blackjack/Blackjack.h \
-	/Users/scottmiller/VSC/CPP/Blackjack/BlackjackUI.cpp \
-	/Users/scottmiller/VSC/CPP/Blackjack/BlackjackUI.h \
-	/Users/scottmiller/VSC/CPP/Blackjack/CMakeLists.txt \
-	/Users/scottmiller/VSC/CPP/Blackjack/Card.cpp \
-	/Users/scottmiller/VSC/CPP/Blackjack/Card.h \
-	/Users/scottmiller/VSC/CPP/Blackjack/Deck.cpp \
-	/Users/scottmiller/VSC/CPP/Blackjack/Deck.h \
-	/Users/scottmiller/VSC/CPP/Blackjack/Hand.cpp \
-	/Users/scottmiller/VSC/CPP/Blackjack/Hand.h \
-	/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/moc_predefs.h \
-	/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake \
-	/Users/scottmiller/VSC/CPP/Blackjack/build/CMakeFiles/3.26.4/CMakeSystem.cmake \
-	/Users/scottmiller/VSC/CPP/Blackjack/main.cpp \
+	/Users/scottmiller/vsc/CPP/Blackjack/Blackjack.cpp \
+	/Users/scottmiller/vsc/CPP/Blackjack/Blackjack.h \
+	/Users/scottmiller/vsc/CPP/Blackjack/BlackjackUI.cpp \
+	/Users/scottmiller/vsc/CPP/Blackjack/BlackjackUI.h \
+	/Users/scottmiller/vsc/CPP/Blackjack/CMakeLists.txt \
+	/Users/scottmiller/vsc/CPP/Blackjack/Card.cpp \
+	/Users/scottmiller/vsc/CPP/Blackjack/Card.h \
+	/Users/scottmiller/vsc/CPP/Blackjack/Deck.cpp \
+	/Users/scottmiller/vsc/CPP/Blackjack/Deck.h \
+	/Users/scottmiller/vsc/CPP/Blackjack/Hand.cpp \
+	/Users/scottmiller/vsc/CPP/Blackjack/Hand.h \
+	/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/moc_predefs.h \
+	/Users/scottmiller/vsc/CPP/Blackjack/build/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake \
+	/Users/scottmiller/vsc/CPP/Blackjack/build/CMakeFiles/3.26.4/CMakeSystem.cmake \
+	/Users/scottmiller/vsc/CPP/Blackjack/main.cpp \
 	/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXInformation.cmake \
 	/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	/usr/local/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
@@ -1054,5 +1054,5 @@ BlackjackUI_autogen/timestamp: \
 	/usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake \
 	/usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
 	/usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-	/Users/scottmiller/VSC/CPP/Blackjack/Blackjack.ui \
+	/Users/scottmiller/vsc/CPP/Blackjack/Blackjack.ui \
 	/usr/local/Cellar/cmake/3.26.4/bin/cmake

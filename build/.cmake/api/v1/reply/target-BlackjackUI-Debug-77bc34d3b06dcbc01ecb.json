@@ -234,7 +234,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI_autogen/include"
+					"path" : "/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI_autogen/include"
 				},
 				{
 					"backtrace" : 14,
@@ -302,11 +302,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "BlackjackUI_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "BlackjackUI_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "BlackjackUI_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "BlackjackUI::@6890427a1f51a3e7e1df",

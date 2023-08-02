@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "BlackjackUI::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-BlackjackUI-Debug-685df615fbd9cdb56e24.json",
+					"jsonFile" : "target-BlackjackUI-Debug-77bc34d3b06dcbc01ecb.json",
 					"name" : "BlackjackUI",
 					"projectIndex" : 0
 				},
@@ -68,8 +68,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/scottmiller/VSC/CPP/Blackjack/build",
-		"source" : "/Users/scottmiller/VSC/CPP/Blackjack"
+		"build" : "/Users/scottmiller/vsc/CPP/Blackjack/build",
+		"source" : "/Users/scottmiller/vsc/CPP/Blackjack"
 	},
 	"version" : 
 	{

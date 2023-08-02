@@ -1,4 +1,4 @@
-# Install script for directory: /Users/scottmiller/VSC/CPP/Blackjack
+# Install script for directory: /Users/scottmiller/vsc/CPP/Blackjack
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/scottmiller/VSC/CPP/Blackjack/build/BlackjackUI.app" USE_SOURCE_PERMISSIONS)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/scottmiller/vsc/CPP/Blackjack/build/BlackjackUI.app" USE_SOURCE_PERMISSIONS)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./BlackjackUI.app/Contents/MacOS/BlackjackUI" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./BlackjackUI.app/Contents/MacOS/BlackjackUI")
     execute_process(COMMAND /usr/bin/install_name_tool
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/scottmiller/VSC/CPP/Blackjack/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/scottmiller/vsc/CPP/Blackjack/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

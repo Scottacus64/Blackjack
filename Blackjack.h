@@ -9,7 +9,7 @@ public:
     Blackjack();
     ~Blackjack();
     void playGame();
-    int addUpHand(Hand hand);
+    int addUpHand(Hand hand, int player);
     bool bust = false;
     bool hit = true;
     int gameOutcome();
@@ -21,6 +21,8 @@ public:
     int playerHit();
 
 private:
+    int dealerAces = 0;
+    int playerAces = 0;
     int dealerScore;
     int playerScore;
     bool playAgain = true;
