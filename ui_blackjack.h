@@ -40,6 +40,7 @@ public:
     QLabel *pc_0;
     QLabel *pc_3;
     QLabel *pc_2;
+    QLabel *results;
 
     void setupUi(QWidget *BlackjackUI)
     {
@@ -150,6 +151,13 @@ public:
         pc_2->setPixmap(QPixmap(QString::fromUtf8("../../VSC/CPP/Blackjack/Card PNGs/13S.png")));
         pc_2->setScaledContents(true);
 
+        results = new QLabel(BlackjackUI);
+        results->setObjectName("results");
+        results->setGeometry(QRect(110, 720, 611, 41));
+        font1.setPointSize(30);
+        results->setFont(font);
+        results->setAlignment(Qt::AlignCenter);
+        
         retranslateUi(BlackjackUI);
 
         QMetaObject::connectSlotsByName(BlackjackUI);
@@ -178,6 +186,7 @@ public:
         pc_0->setText(QString());
         pc_3->setText(QString());
         pc_2->setText(QString());
+        results->setText(QCoreApplication::translate("BlackJack", "Win:      Loss:     Push:", nullptr));
     } // retranslateUi
 
 };
