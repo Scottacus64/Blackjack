@@ -3,13 +3,32 @@
 #include <string>
 #include <iostream>
 
+#include <QCoreApplication>
+#include <QDir>
+
 
 
 BlackjackUI::BlackjackUI(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::BlackjackUI)
 {
-    ui->setupUi(this);
+    QString appDir = QCoreApplication::applicationDirPath();
+        QString assetPath = QDir::cleanPath(appDir + QDir::separator() + "pngs") + QDir::separator();
+
+        ui->setupUi(this);
+        cardImage[0] = QPixmap(assetPath + "0B.png");
+
+        char suits[4] = {'C', 'S', 'H', 'D'};
+        int slot = 0;
+        for (int s=0; s<4; s++)
+        {
+            for (int i=1; i<14; i++)
+            {
+                slot++;
+                cardImage[slot] = QPixmap(assetPath + QString::number(i) + suits[s]+ ".png");
+            }
+        }
+   /* ui->setupUi(this);
 
     cardImage[0] = QPixmap ("/Users/scottmiller/VSC/cpp/Blackjack/Card PNGs/0B.png");
 
@@ -24,7 +43,7 @@ BlackjackUI::BlackjackUI(QWidget *parent)
             path += QString::number(i) + suits[s]+ ".png";
             cardImage[slot] = QPixmap (path);
         }
-    }
+    } */
 
     pc[0] = ui->pc_0;
     pc[1] = ui->pc_1;
